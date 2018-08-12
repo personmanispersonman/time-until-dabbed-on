@@ -1,0 +1,34 @@
+#dab {
+    -webkit-align-self: center; /* Safari 7.0+ */
+    align-self: center;
+  }
+  @keyframes despacito {
+    0% {background-size: 10%;}
+    50% {background-size: 30%}
+    100% {background-size: 300%;}
+  }
+  @keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+  }
+  p {
+      font-size: 500%;
+      animation: color-change 0.2s infinite;
+  }
+  body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  @keyframes color-change {
+    0% { color: red; }
+    25% { color: yellow }
+    50% { color: blue; }
+    75% { color: purple; }
+    100% { color: red}
+  }
+   img {
+       animation: spin 0.0001s infinite;
+   }
+   body {
+    background-image: url("very cool.png");
+    background-repeat: round;
+    animation: despacito 5s linear infinite;
+   }
